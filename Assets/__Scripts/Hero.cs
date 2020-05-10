@@ -79,9 +79,20 @@ public class Hero : MonoBehaviour
         if(go.tag =="Enemy"){
             shieldLevel--;
             Destroy(go);
-        }else{
+        }else if (go.tag == "PowerUp"){
+            AbsorbPowerUp(go);
+
+            }else{
             print("Triggerd by non enemy : "+go.name);
         }
+    }
+
+    public void AbsorbPowerUp(GameObject go){
+        PowerUp pu = go.GetComponent<PowerUp>();
+        switch(pu.type){
+
+        }
+        pu.AbsorbedBy(this.gameObject);
     }
 
     public float shieldLevel{
