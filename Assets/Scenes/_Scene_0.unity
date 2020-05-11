@@ -1105,6 +1105,7 @@ GameObject:
   - component: {fileID: 1576636120}
   - component: {fileID: 1576636119}
   - component: {fileID: 1576636118}
+  - component: {fileID: 1576636122}
   m_Layer: 0
   m_Name: StarFieldBG
   m_TagString: Untagged
@@ -1185,6 +1186,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1576636122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576636117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088a4ee4c5e06aa45868771da7279af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poi: {fileID: 285807359}
+  panels:
+  - {fileID: 1349164841}
+  - {fileID: 432030772}
+  scrollSpeed: -20
+  motionMult: 0.25
 --- !u!1 &1651716402
 GameObject:
   m_ObjectHideFlags: 0
